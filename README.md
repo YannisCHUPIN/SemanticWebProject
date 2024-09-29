@@ -1,7 +1,19 @@
 # SemanticWebProject
 ## The current database contains the data of bodily accidents on France's roads and public space  between 2005 and 2022.
 
-### Les attributs de la base 
+### A few words to understand the DataBAse.
+
+This DataBase is the result of the collection by France's Ministery of the Interior of the DATA dealing with bodily
+accidents in the public space in France between 2005 and 2022. 
+
+To measure its size here is a few numbers : 
+ - 120 000 is how many drivers were involved in those accidents (this does not take into account all the passengers
+referenced in the base, as well as pedestrians)
+ - 68 refers how many attributes there are once the base is merged. Note that some are pivital while some are either
+poorly referenced such as secu1, secu2, secu3 or completely useless to the project. Namely pr or pr1 are not interesting
+DATA to keep.
+
+### Condensed description of Attributes.
 
 | **Attribut**        | **Description**                                                                 |
 |---------------------|---------------------------------------------------------------------------------|
@@ -37,9 +49,8 @@
 | *manv*              | Manœuvre principale avant l'accident                                           |
 | *catu*              | Catégorie d'usager (conducteur, passager, piéton)                              |
 | *grav*              | Gravité de l'accident pour l'usager                                             |
-| *sexe*              | Sexe du conducteur                                                             |
+| *sexe*              | Sexe de la personne                                                            |
 | *trajet*            | Motif du déplacement au moment de l'accident                                   |
-| *mortal*            | Indique si le véhicule est impliqué dans un accident mortel (calculé dans le notebook) |
 
 
 | **Attribut**        | **Description**                                                             |
