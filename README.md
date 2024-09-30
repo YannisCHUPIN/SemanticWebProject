@@ -7,11 +7,11 @@ This DataBase is the result of the collection by France's Ministery of the Inter
 accidents in the public space in France between 2005 and 2022. 
 
 To measure its size here is a few numbers : 
- - 120 000 is how many drivers were involved in those accidents (this does not take into account all the passengers
+ - 94 493 is how many drivers were involved in those accidents (this does not take into account all the passengers
 referenced in the base, as well as pedestrians)
- - 68 refers how many attributes there are once the base is merged. Note that some are pivital while some are either
-poorly referenced such as secu1, secu2, secu3 or completely useless to the project. Namely pr or pr1 are not interesting
-DATA to keep.
+ - 68 refers how many attributes there are once the base is merged from a driver point of view. Note that some are
+pivital while some are either poorly referenced such as secu1, secu2, secu3 or completely useless to the project.
+Namely pr or pr1 are not interesting DATA to keep.
 
 ### Condensed description of Attributes.
 
