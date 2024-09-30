@@ -1,7 +1,7 @@
 # SemanticWebProject
 ## The current database contains the data of bodily accidents on France's roads and public space  between 2005 and 2022.
 
-### A few words to understand the DataBAse.
+### A few words to understand the DataBase.
 
 This DataBase is the result of the collection by France's Ministery of the Interior of the DATA dealing with bodily
 accidents in the public space in France between 2005 and 2022. 
