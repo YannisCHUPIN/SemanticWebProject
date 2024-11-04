@@ -182,3 +182,36 @@ WHERE {
 }
 limit 10
 ```
+
+```SPARQL
+PREFIX schema: <http://schema.org/>
+PREFIX ns1: <https://www.geonames.org/ontology#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX schema1: <http://schema.org/>
+PREFIX schema2: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?accident ?dayAccident ?monthAccident ?nomMonument
+WHERE {
+  # Dataset des accidents de voitures
+  SERVICE <http://localhost:3030/Projet_Web_sem_accidents_voitures/sparql> {
+    ?accident schema2:identifier ?id;
+              schema2:day ?dayAccident;
+              schema2:month ?monthAccident;
+              ns1:latitude ?accidentLat;
+              ns1:longitude ?accidentLong.
+  }
+  # Dataset des monuments historiques
+  SERVICE <http://localhost:3030/heritage/sparql> {
+    ?monument schema1:name ?nomMonument;
+              geo:lat ?monumentLat;
+              geo:long ?monumentLong.
+  }
+  # Condition de proximité
+  FILTER(
+    (ABS(xsd:float(?accidentLat) - ?monumentLat) < 0.1 && 
+     ABS(xsd:float(?accidentLong) - ?monumentLong) < 0.1)
+  )
+}
+limit 10
+```
