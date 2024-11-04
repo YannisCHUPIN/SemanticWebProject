@@ -81,3 +81,108 @@ Namely pr or pr1 are not interesting DATA to keep.
 | *hrmn*              | Heure et minutes                                                           |
 | *an*                | Année de l'accident                                                         |
 | *an\_nais*          | Année de naissance de l'usager                                              |
+
+### Working SPARQL qwery 
+
+#### On Accidents 
+```SPARQL
+PREFIX ns1: <https://www.geonames.org/ontology#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?accident ?accidentLat ?accidentLong
+WHERE {
+  # Dataset des accidents de voitures
+  SERVICE <http://localhost:3030/Projet_Web_sem_accidents_voitures/sparql> {
+    ?accident schema:identifier ?id;
+              ns1:latitude ?accidentLat;
+              ns1:longitude ?accidentLong.
+  }
+}
+LIMIT 10
+```
+
+#### On powerplants
+```SPARQL
+PREFIX ns1: <https://www.geonames.org/ontology#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ns2: <https://fuseki.nishyda.tech/ontology#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?powerPlant ?plantLat ?plantLong
+WHERE {
+  # Dataset des centrales électriques
+  SERVICE <http://localhost:3030/dataset_Power_Plant/sparql> {
+    ?powerPlant a ns2:PowerPlant;
+                geo:lat ?plantLat;
+                geo:long ?plantLong.
+  }
+}
+LIMIT 10
+```
+
+#### On Airports
+```SPARQL
+PREFIX ns1: <https://www.geonames.org/ontology#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ns2: <https://fuseki.nishyda.tech/ontology#>
+PREFIX ns3: <http://sw-portal.deri.org/ontologies/swportal#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?airport ?airportLat ?airportLong
+WHERE {
+  # Dataset des aéroports
+  SERVICE <http://localhost:3030/dataset_aeroport/sparql> {
+    ?airport ns3:inCity ?city;
+             geo:lat ?airportLat;
+             geo:long ?airportLong.
+  }
+}
+LIMIT 10
+```
+
+
+### Working SPARQL Federated qwery 
+
+```SPARQL
+PREFIX ns1: <https://www.geonames.org/ontology#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ns2: <https://fuseki.nishyda.tech/ontology#>
+PREFIX ns3: <http://sw-portal.deri.org/ontologies/swportal#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?accidentLat ?accidentLong ?plantLat ?plantLong ?airportLat ?airportLong
+WHERE {
+  # Dataset des accidents de voitures
+  SERVICE <http://localhost:3030/Projet_Web_sem_accidents_voitures/sparql> {
+    ?accident schema:identifier ?id;
+              ns1:latitude ?accidentLat;
+              ns1:longitude ?accidentLong.
+  }
+  
+  # Dataset des centrales électriques
+  SERVICE <http://localhost:3030/dataset_Power_Plant/sparql> {
+    ?powerPlant a ns2:PowerPlant;
+                geo:lat ?plantLat;
+                geo:long ?plantLong.
+  }
+  
+  # Dataset des aéroports
+  SERVICE <http://localhost:3030/dataset_aeroport/sparql> {
+    ?airport ns3:inCity ?city;
+             geo:lat ?airportLat;
+             geo:lat ?airportLong.
+  }
+  
+  # Condition de proximité basée sur la distance géographique (simplifiée)
+  #FILTER(
+  #  (ABS(?accidentLat - ?plantLat) < 1 && ABS(?accidentLong - ?plantLong) < 1) ||
+  #  (ABS(?accidentLat - ?airportLat) < 1 && ABS(?accidentLong - ?airportLong) < 1)
+  #)
+
+}
+limit 10
+```
