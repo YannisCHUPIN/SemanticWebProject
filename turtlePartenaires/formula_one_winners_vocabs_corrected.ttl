@@ -1,0 +1,910 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/driver/Alain_Prost> a foaf:Person ;
+    dbo:wins 51 ;
+    dcterms:temporal "1980-1991, 1993" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1993 German Grand Prix" ;
+    schema:startDate "1981 French Grand Prix" ;
+    foaf:name "Alain Prost" .
+
+<http://example.org/driver/Alan_Jones> a foaf:Person ;
+    dbo:wins 12 ;
+    dcterms:temporal "1975-1981, 1983, 1985-1986" ;
+    schema:countryOfOrigin "Australia" ;
+    schema:endDate "1981 Caesars Palace Grand Prix" ;
+    schema:startDate "1977 Austrian Grand Prix" ;
+    foaf:name "Alan Jones" .
+
+<http://example.org/driver/Alberto_Ascari> a foaf:Person ;
+    dbo:wins 13 ;
+    dcterms:temporal "1950-1955" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1953 Swiss Grand Prix" ;
+    schema:startDate "1951 German Grand Prix" ;
+    foaf:name "Alberto Ascari" .
+
+<http://example.org/driver/Alessandro_Nannini> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1986-1990" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1989 Japanese Grand Prix" ;
+    schema:startDate "1989 Japanese Grand Prix" ;
+    foaf:name "Alessandro Nannini" .
+
+<http://example.org/driver/Ayrton_Senna> a foaf:Person ;
+    dbo:wins 41 ;
+    dcterms:temporal "1984-1994" ;
+    schema:countryOfOrigin "Brazil" ;
+    schema:endDate "1993 Australian Grand Prix" ;
+    schema:startDate "1985 Portuguese Grand Prix" ;
+    foaf:name "Ayrton Senna" .
+
+<http://example.org/driver/Bill_Vukovich> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1951-1955" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1954 Indianapolis 500" ;
+    schema:startDate "1953 Indianapolis 500" ;
+    foaf:name "Bill Vukovich" .
+
+<http://example.org/driver/Bob_Sweikert> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1952-1956" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1955 Indianapolis 500" ;
+    schema:startDate "1955 Indianapolis 500" ;
+    foaf:name "Bob Sweikert" .
+
+<http://example.org/driver/Bruce_McLaren> a foaf:Person ;
+    dbo:wins 4 ;
+    dcterms:temporal "1958-1970" ;
+    schema:countryOfOrigin "New Zealand" ;
+    schema:endDate "1968 Belgian Grand Prix" ;
+    schema:startDate "1959 United States Grand Prix" ;
+    foaf:name "Bruce McLaren" .
+
+<http://example.org/driver/Carlos_Reutemann> a foaf:Person ;
+    dbo:wins 12 ;
+    dcterms:temporal "1972-1982" ;
+    schema:countryOfOrigin "Argentina" ;
+    schema:endDate "1981 Belgian Grand Prix" ;
+    schema:startDate "1974 South African Grand Prix" ;
+    foaf:name "Carlos Reutemann" .
+
+<http://example.org/driver/Carlos_Sainz_Jr.*> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "2015-" ;
+    schema:countryOfOrigin "Spain" ;
+    schema:endDate "2023 Singapore Grand Prix" ;
+    schema:startDate "2022 British Grand Prix" ;
+    foaf:name "Carlos Sainz Jr.*" .
+
+<http://example.org/driver/Charles_Leclerc*> a foaf:Person ;
+    dbo:wins 5 ;
+    dcterms:temporal "2018-" ;
+    schema:countryOfOrigin "Monaco" ;
+    schema:endDate "2022 Austrian Grand Prix" ;
+    schema:startDate "2019 Belgian Grand Prix" ;
+    foaf:name "Charles Leclerc*" .
+
+<http://example.org/driver/Clay_Regazzoni> a foaf:Person ;
+    dbo:wins 5 ;
+    dcterms:temporal "1970-1980" ;
+    schema:countryOfOrigin "Switzerland" ;
+    schema:endDate "1979 British Grand Prix" ;
+    schema:startDate "1970 Italian Grand Prix" ;
+    foaf:name "Clay Regazzoni" .
+
+<http://example.org/driver/Damon_Hill> a foaf:Person ;
+    dbo:wins 22 ;
+    dcterms:temporal "1992-1999" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1998 Belgian Grand Prix" ;
+    schema:startDate "1993 Hungarian Grand Prix" ;
+    foaf:name "Damon Hill" .
+
+<http://example.org/driver/Dan_Gurney> a foaf:Person ;
+    dbo:wins 4 ;
+    dcterms:temporal "1959-1968, 1970" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1967 Belgian Grand Prix" ;
+    schema:startDate "1962 French Grand Prix" ;
+    foaf:name "Dan Gurney" .
+
+<http://example.org/driver/Daniel_Ricciardo*> a foaf:Person ;
+    dbo:wins 8 ;
+    dcterms:temporal "2011-" ;
+    schema:countryOfOrigin "Australia" ;
+    schema:endDate "2021 Italian Grand Prix" ;
+    schema:startDate "2014 Canadian Grand Prix" ;
+    foaf:name "Daniel Ricciardo*" .
+
+<http://example.org/driver/David_Coulthard> a foaf:Person ;
+    dbo:wins 13 ;
+    dcterms:temporal "1994-2008" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "2003 Australian Grand Prix" ;
+    schema:startDate "1995 Portuguese Grand Prix" ;
+    foaf:name "David Coulthard" .
+
+<http://example.org/driver/Denny_Hulme> a foaf:Person ;
+    dbo:wins 8 ;
+    dcterms:temporal "1965-1974" ;
+    schema:countryOfOrigin "New Zealand" ;
+    schema:endDate "1974 Argentine Grand Prix" ;
+    schema:startDate "1967 Monaco Grand Prix" ;
+    foaf:name "Denny Hulme" .
+
+<http://example.org/driver/Didier_Pironi> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1978-1982" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1982 Dutch Grand Prix" ;
+    schema:startDate "1980 Belgian Grand Prix" ;
+    foaf:name "Didier Pironi" .
+
+<http://example.org/driver/Eddie_Irvine> a foaf:Person ;
+    dbo:wins 4 ;
+    dcterms:temporal "1993-2002" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1999 Malaysian Grand Prix" ;
+    schema:startDate "1999 Australian Grand Prix" ;
+    foaf:name "Eddie Irvine" .
+
+<http://example.org/driver/Elio_de_Angelis> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1979-1986" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1985 San Marino Grand Prix" ;
+    schema:startDate "1982 Austrian Grand Prix" ;
+    foaf:name "Elio de Angelis" .
+
+<http://example.org/driver/Emerson_Fittipaldi> a foaf:Person ;
+    dbo:wins 14 ;
+    dcterms:temporal "1970-1980" ;
+    schema:countryOfOrigin "Brazil" ;
+    schema:endDate "1975 British Grand Prix" ;
+    schema:startDate "1970 United States Grand Prix" ;
+    foaf:name "Emerson Fittipaldi" .
+
+<http://example.org/driver/Esteban_Ocon*> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "2016-2018, 2020-" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "2021 Hungarian Grand Prix" ;
+    schema:startDate "2021 Hungarian Grand Prix" ;
+    foaf:name "Esteban Ocon*" .
+
+<http://example.org/driver/Felipe_Massa> a foaf:Person ;
+    dbo:wins 11 ;
+    dcterms:temporal "2002, 2004-2017" ;
+    schema:countryOfOrigin "Brazil" ;
+    schema:endDate "2008 Brazilian Grand Prix" ;
+    schema:startDate "2006 Turkish Grand Prix" ;
+    foaf:name "Felipe Massa" .
+
+<http://example.org/driver/Fernando_Alonso> a foaf:Person ;
+    dbo:wins 32 ;
+    dcterms:temporal "2001, 2003-2018, 2021-" ;
+    schema:countryOfOrigin "Spain" ;
+    schema:endDate "2013 Spanish Grand Prix" ;
+    schema:startDate "2003 Hungarian Grand Prix" ;
+    foaf:name "Fernando Alonso" .
+
+<http://example.org/driver/François_Cevert> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1970-1973" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1971 United States Grand Prix" ;
+    schema:startDate "1971 United States Grand Prix" ;
+    foaf:name "François Cevert" .
+
+<http://example.org/driver/George_Russell*> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "2019-" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "2022 SÃ£o Paulo Grand Prix" ;
+    schema:startDate "2022 SÃ£o Paulo Grand Prix" ;
+    foaf:name "George Russell*" .
+
+<http://example.org/driver/Gerhard_Berger> a foaf:Person ;
+    dbo:wins 10 ;
+    dcterms:temporal "1984-1997" ;
+    schema:countryOfOrigin "Austria" ;
+    schema:endDate "1997 German Grand Prix" ;
+    schema:startDate "1986 Mexican Grand Prix" ;
+    foaf:name "Gerhard Berger" .
+
+<http://example.org/driver/Giancarlo_Baghetti> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1961-1967" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1961 French Grand Prix" ;
+    schema:startDate "1961 French Grand Prix" ;
+    foaf:name "Giancarlo Baghetti" .
+
+<http://example.org/driver/Giancarlo_Fisichella> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1996-2009" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "2006 Malaysian Grand Prix" ;
+    schema:startDate "2003 Brazilian Grand Prix" ;
+    foaf:name "Giancarlo Fisichella" .
+
+<http://example.org/driver/Gilles_Villeneuve> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1977-1982" ;
+    schema:countryOfOrigin "Canada" ;
+    schema:endDate "1981 Spanish Grand Prix" ;
+    schema:startDate "1978 Canadian Grand Prix" ;
+    foaf:name "Gilles Villeneuve" .
+
+<http://example.org/driver/Giuseppe_Farina> a foaf:Person ;
+    dbo:wins 5 ;
+    dcterms:temporal "1950-1955" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1953 German Grand Prix" ;
+    schema:startDate "1950 British Grand Prix" ;
+    foaf:name "Giuseppe Farina" .
+
+<http://example.org/driver/Graham_Hill> a foaf:Person ;
+    dbo:wins 14 ;
+    dcterms:temporal "1958-1975" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1969 Monaco Grand Prix" ;
+    schema:startDate "1962 Dutch Grand Prix" ;
+    foaf:name "Graham Hill" .
+
+<http://example.org/driver/Gunnar_Nilsson> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1976-1977" ;
+    schema:countryOfOrigin "Sweden" ;
+    schema:endDate "1977 Belgian Grand Prix" ;
+    schema:startDate "1977 Belgian Grand Prix" ;
+    foaf:name "Gunnar Nilsson" .
+
+<http://example.org/driver/Heikki_Kovalainen> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "2007-2013" ;
+    schema:countryOfOrigin "Finland" ;
+    schema:endDate "2008 Hungarian Grand Prix" ;
+    schema:startDate "2008 Hungarian Grand Prix" ;
+    foaf:name "Heikki Kovalainen" .
+
+<http://example.org/driver/HeinzHarald_Frentzen> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1994-2003" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "1999 Italian Grand Prix" ;
+    schema:startDate "1997 San Marino Grand Prix" ;
+    foaf:name "HeinzHarald Frentzen" .
+
+<http://example.org/driver/Innes_Ireland> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1959-1966" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1961 United States Grand Prix" ;
+    schema:startDate "1961 United States Grand Prix" ;
+    foaf:name "Innes Ireland" .
+
+<http://example.org/driver/Jack_Brabham> a foaf:Person ;
+    dbo:wins 14 ;
+    dcterms:temporal "1955-1970" ;
+    schema:countryOfOrigin "Australia" ;
+    schema:endDate "1970 South African Grand Prix" ;
+    schema:startDate "1959 Monaco Grand Prix" ;
+    foaf:name "Jack Brabham" .
+
+<http://example.org/driver/Jackie_Stewart> a foaf:Person ;
+    dbo:wins 27 ;
+    dcterms:temporal "1965-1973" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1973 German Grand Prix" ;
+    schema:startDate "1965 Italian Grand Prix" ;
+    foaf:name "Jackie Stewart" .
+
+<http://example.org/driver/Jacky_Ickx> a foaf:Person ;
+    dbo:wins 8 ;
+    dcterms:temporal "1967-1979" ;
+    schema:countryOfOrigin "Belgium" ;
+    schema:endDate "1972 German Grand Prix" ;
+    schema:startDate "1968 French Grand Prix" ;
+    foaf:name "Jacky Ickx" .
+
+<http://example.org/driver/Jacques_Laffite> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1974-1986" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1981 Canadian Grand Prix" ;
+    schema:startDate "1977 Swedish Grand Prix" ;
+    foaf:name "Jacques Laffite" .
+
+<http://example.org/driver/Jacques_Villeneuve> a foaf:Person ;
+    dbo:wins 11 ;
+    dcterms:temporal "1996-2006" ;
+    schema:countryOfOrigin "Canada" ;
+    schema:endDate "1997 Luxembourg Grand Prix" ;
+    schema:startDate "1996 European Grand Prix" ;
+    foaf:name "Jacques Villeneuve" .
+
+<http://example.org/driver/James_Hunt> a foaf:Person ;
+    dbo:wins 10 ;
+    dcterms:temporal "1973-1979" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1977 Japanese Grand Prix" ;
+    schema:startDate "1975 Dutch Grand Prix" ;
+    foaf:name "James Hunt" .
+
+<http://example.org/driver/Jarno_Trulli> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1997-2011" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "2004 Monaco Grand Prix" ;
+    schema:startDate "2004 Monaco Grand Prix" ;
+    foaf:name "Jarno Trulli" .
+
+<http://example.org/driver/Jean_Alesi> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1989-2001" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1995 Canadian Grand Prix" ;
+    schema:startDate "1995 Canadian Grand Prix" ;
+    foaf:name "Jean Alesi" .
+
+<http://example.org/driver/JeanPierre_Beltoise> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1967-1974" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1972 Monaco Grand Prix" ;
+    schema:startDate "1972 Monaco Grand Prix" ;
+    foaf:name "JeanPierre Beltoise" .
+
+<http://example.org/driver/JeanPierre_Jabouille> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1974-1975, 1977-1981" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1980 Austrian Grand Prix" ;
+    schema:startDate "1979 French Grand Prix" ;
+    foaf:name "JeanPierre Jabouille" .
+
+<http://example.org/driver/Jenson_Button> a foaf:Person ;
+    dbo:wins 15 ;
+    dcterms:temporal "2000-2017" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "2012 Brazilian Grand Prix" ;
+    schema:startDate "2006 Hungarian Grand Prix" ;
+    foaf:name "Jenson Button" .
+
+<http://example.org/driver/Jim_Clark> a foaf:Person ;
+    dbo:wins 25 ;
+    dcterms:temporal "1960-1968" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1968 South African Grand Prix" ;
+    schema:startDate "1962 Belgian Grand Prix" ;
+    foaf:name "Jim Clark" .
+
+<http://example.org/driver/Jim_Rathmann> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950, 1952-1960" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1960 Indianapolis 500" ;
+    schema:startDate "1960 Indianapolis 500" ;
+    foaf:name "Jim Rathmann" .
+
+<http://example.org/driver/Jimmy_Bryan> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1952-1960" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1958 Indianapolis 500" ;
+    schema:startDate "1958 Indianapolis 500" ;
+    foaf:name "Jimmy Bryan" .
+
+<http://example.org/driver/Jo_Bonnier> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1956-1971" ;
+    schema:countryOfOrigin "Sweden" ;
+    schema:endDate "1959 Dutch Grand Prix" ;
+    schema:startDate "1959 Dutch Grand Prix" ;
+    foaf:name "Jo Bonnier" .
+
+<http://example.org/driver/Jo_Siffert> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1962-1971" ;
+    schema:countryOfOrigin "Switzerland" ;
+    schema:endDate "1971 Austrian Grand Prix" ;
+    schema:startDate "1968 British Grand Prix" ;
+    foaf:name "Jo Siffert" .
+
+<http://example.org/driver/Jochen_Mass> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1973-1982" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "1975 Spanish Grand Prix" ;
+    schema:startDate "1975 Spanish Grand Prix" ;
+    foaf:name "Jochen Mass" .
+
+<http://example.org/driver/Jochen_Rindt> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1964-1970" ;
+    schema:countryOfOrigin "Austria" ;
+    schema:endDate "1970 German Grand Prix" ;
+    schema:startDate "1969 United States Grand Prix" ;
+    foaf:name "Jochen Rindt" .
+
+<http://example.org/driver/Jody_Scheckter> a foaf:Person ;
+    dbo:wins 10 ;
+    dcterms:temporal "1972-1980" ;
+    schema:countryOfOrigin "South Africa" ;
+    schema:endDate "1979 Italian Grand Prix" ;
+    schema:startDate "1974 Swedish Grand Prix" ;
+    foaf:name "Jody Scheckter" .
+
+<http://example.org/driver/John_Surtees> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1960-1972" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1967 Italian Grand Prix" ;
+    schema:startDate "1963 German Grand Prix" ;
+    foaf:name "John Surtees" .
+
+<http://example.org/driver/John_Watson> a foaf:Person ;
+    dbo:wins 5 ;
+    dcterms:temporal "1973-1983, 1985" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1983 United States West Grand Prix" ;
+    schema:startDate "1976 Austrian Grand Prix" ;
+    foaf:name "John Watson" .
+
+<http://example.org/driver/Johnnie_Parsons> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1958" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1950 Indianapolis 500" ;
+    schema:startDate "1950 Indianapolis 500" ;
+    foaf:name "Johnnie Parsons" .
+
+<http://example.org/driver/Johnny_Herbert> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1989-2000" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1999 European Grand Prix" ;
+    schema:startDate "1995 British Grand Prix" ;
+    foaf:name "Johnny Herbert" .
+
+<http://example.org/driver/José_Carlos_Pace> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1972-1977" ;
+    schema:countryOfOrigin "Brazil" ;
+    schema:endDate "1975 Brazilian Grand Prix" ;
+    schema:startDate "1975 Brazilian Grand Prix" ;
+    foaf:name "José Carlos Pace" .
+
+<http://example.org/driver/José_Froilán_González> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1950-1957, 1960" ;
+    schema:countryOfOrigin "Argentina" ;
+    schema:endDate "1954 British Grand Prix" ;
+    schema:startDate "1951 British Grand Prix" ;
+    foaf:name "José Froilán González" .
+
+<http://example.org/driver/Juan_Manuel_Fangio> a foaf:Person ;
+    dbo:wins 24 ;
+    dcterms:temporal "1950-1951, 1953-1958" ;
+    schema:countryOfOrigin "Argentina" ;
+    schema:endDate "1957 German Grand Prix" ;
+    schema:startDate "1950 Monaco Grand Prix" ;
+    foaf:name "Juan Manuel Fangio" .
+
+<http://example.org/driver/Juan_Pablo_Montoya> a foaf:Person ;
+    dbo:wins 7 ;
+    dcterms:temporal "2001-2006" ;
+    schema:countryOfOrigin "Colombia" ;
+    schema:endDate "2005 Brazilian Grand Prix" ;
+    schema:startDate "2001 Italian Grand Prix" ;
+    foaf:name "Juan Pablo Montoya" .
+
+<http://example.org/driver/Keke_Rosberg> a foaf:Person ;
+    dbo:wins 5 ;
+    dcterms:temporal "1978-1986" ;
+    schema:countryOfOrigin "Finland" ;
+    schema:endDate "1985 Australian Grand Prix" ;
+    schema:startDate "1982 Swiss Grand Prix" ;
+    foaf:name "Keke Rosberg" .
+
+<http://example.org/driver/Kimi_Räikkönen> a foaf:Person ;
+    dbo:wins 21 ;
+    dcterms:temporal "2001-2009, 2012-2021" ;
+    schema:countryOfOrigin "Finland" ;
+    schema:endDate "2018 United States Grand Prix" ;
+    schema:startDate "2003 Malaysian Grand Prix" ;
+    foaf:name "Kimi Räikkönen" .
+
+<http://example.org/driver/Lee_Wallard> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1951" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1951 Indianapolis 500" ;
+    schema:startDate "1951 Indianapolis 500" ;
+    foaf:name "Lee Wallard" .
+
+<http://example.org/driver/Lewis_Hamilton> a foaf:Person ;
+    dbo:wins 103 ;
+    dcterms:temporal "2007-" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "2021 Saudi Arabian Grand Prix" ;
+    schema:startDate "2007 Canadian Grand Prix" ;
+    foaf:name "Lewis Hamilton" .
+
+<http://example.org/driver/Lorenzo_Bandini> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1961-1967" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1964 Austrian Grand Prix" ;
+    schema:startDate "1964 Austrian Grand Prix" ;
+    foaf:name "Lorenzo Bandini" .
+
+<http://example.org/driver/Ludovico_Scarfiotti> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1963-1968" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1966 Italian Grand Prix" ;
+    schema:startDate "1966 Italian Grand Prix" ;
+    foaf:name "Ludovico Scarfiotti" .
+
+<http://example.org/driver/Luigi_Fagioli> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1951" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1951 French Grand Prix" ;
+    schema:startDate "1951 French Grand Prix" ;
+    foaf:name "Luigi Fagioli" .
+
+<http://example.org/driver/Luigi_Musso> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1954-1958" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1956 Argentine Grand Prix" ;
+    schema:startDate "1956 Argentine Grand Prix" ;
+    foaf:name "Luigi Musso" .
+
+<http://example.org/driver/Mario_Andretti> a foaf:Person ;
+    dbo:wins 12 ;
+    dcterms:temporal "1968-1972, 1974-1982" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1978 Dutch Grand Prix" ;
+    schema:startDate "1971 South African Grand Prix" ;
+    foaf:name "Mario Andretti" .
+
+<http://example.org/driver/Mark_Webber> a foaf:Person ;
+    dbo:wins 9 ;
+    dcterms:temporal "2002-2013" ;
+    schema:countryOfOrigin "Australia" ;
+    schema:endDate "2012 British Grand Prix" ;
+    schema:startDate "2009 German Grand Prix" ;
+    foaf:name "Mark Webber" .
+
+<http://example.org/driver/Maurice_Trintignant> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1950-1964" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1958 Monaco Grand Prix" ;
+    schema:startDate "1955 Monaco Grand Prix" ;
+    foaf:name "Maurice Trintignant" .
+
+<http://example.org/driver/Max_Verstappen> a foaf:Person ;
+    dbo:wins 54 ;
+    dcterms:temporal "2015-" ;
+    schema:countryOfOrigin "Netherlands" ;
+    schema:endDate "2023 Abu Dhabi Grand Prix" ;
+    schema:startDate "2016 Spanish Grand Prix" ;
+    foaf:name "Max Verstappen" .
+
+<http://example.org/driver/Michael_Schumacher> a foaf:Person ;
+    dbo:wins 91 ;
+    dcterms:temporal "1991-2006, 2010-2012" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "2006 Chinese Grand Prix" ;
+    schema:startDate "1992 Belgian Grand Prix" ;
+    foaf:name "Michael Schumacher" .
+
+<http://example.org/driver/Michele_Alboreto> a foaf:Person ;
+    dbo:wins 5 ;
+    dcterms:temporal "1981-1994" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1985 German Grand Prix" ;
+    schema:startDate "1982 Caesars Palace Grand Prix" ;
+    foaf:name "Michele Alboreto" .
+
+<http://example.org/driver/Mika_Häkkinen> a foaf:Person ;
+    dbo:wins 20 ;
+    dcterms:temporal "1991-2001" ;
+    schema:countryOfOrigin "Finland" ;
+    schema:endDate "2001 United States Grand Prix" ;
+    schema:startDate "1997 European Grand Prix" ;
+    foaf:name "Mika Häkkinen" .
+
+<http://example.org/driver/Mike_Hawthorn> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1952-1958" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1958 French Grand Prix" ;
+    schema:startDate "1953 French Grand Prix" ;
+    foaf:name "Mike Hawthorn" .
+
+<http://example.org/driver/Nelson_Piquet> a foaf:Person ;
+    dbo:wins 23 ;
+    dcterms:temporal "1978-1991" ;
+    schema:countryOfOrigin "Brazil" ;
+    schema:endDate "1991 Canadian Grand Prix" ;
+    schema:startDate "1980 United States Grand Prix West" ;
+    foaf:name "Nelson Piquet" .
+
+<http://example.org/driver/Nico_Rosberg> a foaf:Person ;
+    dbo:wins 23 ;
+    dcterms:temporal "2006-2016" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "2016 Japanese Grand Prix" ;
+    schema:startDate "2012 Chinese Grand Prix" ;
+    foaf:name "Nico Rosberg" .
+
+<http://example.org/driver/Nigel_Mansell> a foaf:Person ;
+    dbo:wins 31 ;
+    dcterms:temporal "1980-1992, 1994-1995" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1994 Australian Grand Prix" ;
+    schema:startDate "1985 European Grand Prix" ;
+    foaf:name "Nigel Mansell" .
+
+<http://example.org/driver/Niki_Lauda> a foaf:Person ;
+    dbo:wins 25 ;
+    dcterms:temporal "1971-1979, 1982-1985" ;
+    schema:countryOfOrigin "Austria" ;
+    schema:endDate "1985 Dutch Grand Prix" ;
+    schema:startDate "1974 Spanish Grand Prix" ;
+    foaf:name "Niki Lauda" .
+
+<http://example.org/driver/Olivier_Panis> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1994-1999, 2001-2004" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1996 Monaco Grand Prix" ;
+    schema:startDate "1996 Monaco Grand Prix" ;
+    foaf:name "Olivier Panis" .
+
+<http://example.org/driver/Pastor_Maldonado> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "2011-2015" ;
+    schema:countryOfOrigin "Venezuela" ;
+    schema:endDate "2012 Spanish Grand Prix" ;
+    schema:startDate "2012 Spanish Grand Prix" ;
+    foaf:name "Pastor Maldonado" .
+
+<http://example.org/driver/Pat_Flaherty> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1959" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1956 Indianapolis 500" ;
+    schema:startDate "1956 Indianapolis 500" ;
+    foaf:name "Pat Flaherty" .
+
+<http://example.org/driver/Patrick_Depailler> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1972, 1974-1980" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1979 Spanish Grand Prix" ;
+    schema:startDate "1978 Monaco Grand Prix" ;
+    foaf:name "Patrick Depailler" .
+
+<http://example.org/driver/Patrick_Tambay> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1977-1986" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1983 San Marino Grand Prix" ;
+    schema:startDate "1982 German Grand Prix" ;
+    foaf:name "Patrick Tambay" .
+
+<http://example.org/driver/Pedro_Rodríguez> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1963-1971" ;
+    schema:countryOfOrigin "Mexico" ;
+    schema:endDate "1970 Belgian Grand Prix" ;
+    schema:startDate "1967 South African Grand Prix" ;
+    foaf:name "Pedro Rodríguez" .
+
+<http://example.org/driver/Peter_Collins> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1952-1958" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1958 British Grand Prix" ;
+    schema:startDate "1956 Belgian Grand Prix" ;
+    foaf:name "Peter Collins" .
+
+<http://example.org/driver/Peter_Gethin> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1970-1974" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1971 Italian Grand Prix" ;
+    schema:startDate "1971 Italian Grand Prix" ;
+    foaf:name "Peter Gethin" .
+
+<http://example.org/driver/Peter_Revson> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1964, 1971-1974" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1973 Canadian Grand Prix" ;
+    schema:startDate "1973 British Grand Prix" ;
+    foaf:name "Peter Revson" .
+
+<http://example.org/driver/Phil_Hill> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1958-1964, 1966" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1961 Italian Grand Prix" ;
+    schema:startDate "1960 Italian Grand Prix" ;
+    foaf:name "Phil Hill" .
+
+<http://example.org/driver/Piero_Taruffi> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1956" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1952 Swiss Grand Prix" ;
+    schema:startDate "1952 Swiss Grand Prix" ;
+    foaf:name "Piero Taruffi" .
+
+<http://example.org/driver/Pierre_Gasly*> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "2017-" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "2020 Italian Grand Prix" ;
+    schema:startDate "2020 Italian Grand Prix" ;
+    foaf:name "Pierre Gasly*" .
+
+<http://example.org/driver/Ralf_Schumacher> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1997-2007" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "2003 French Grand Prix" ;
+    schema:startDate "2001 San Marino Grand Prix" ;
+    foaf:name "Ralf Schumacher" .
+
+<http://example.org/driver/René_Arnoux> a foaf:Person ;
+    dbo:wins 7 ;
+    dcterms:temporal "1978-1989" ;
+    schema:countryOfOrigin "France" ;
+    schema:endDate "1983 Dutch Grand Prix" ;
+    schema:startDate "1980 Brazilian Grand Prix" ;
+    foaf:name "René Arnoux" .
+
+<http://example.org/driver/Riccardo_Patrese> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1977-1993" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1992 Japanese Grand Prix" ;
+    schema:startDate "1982 Monaco Grand Prix" ;
+    foaf:name "Riccardo Patrese" .
+
+<http://example.org/driver/Richie_Ginther> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1960-1967" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1965 Mexican Grand Prix" ;
+    schema:startDate "1965 Mexican Grand Prix" ;
+    foaf:name "Richie Ginther" .
+
+<http://example.org/driver/Robert_Kubica> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "2006-2010, 2019, 2021" ;
+    schema:countryOfOrigin "Poland" ;
+    schema:endDate "2008 Canadian Grand Prix" ;
+    schema:startDate "2008 Canadian Grand Prix" ;
+    foaf:name "Robert Kubica" .
+
+<http://example.org/driver/Rodger_Ward> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1951-1960, 1963" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1959 Indianapolis 500" ;
+    schema:startDate "1959 Indianapolis 500" ;
+    foaf:name "Rodger Ward" .
+
+<http://example.org/driver/Ronnie_Peterson> a foaf:Person ;
+    dbo:wins 10 ;
+    dcterms:temporal "1970-1978" ;
+    schema:countryOfOrigin "Sweden" ;
+    schema:endDate "1978 Austrian Grand Prix" ;
+    schema:startDate "1973 French Grand Prix" ;
+    foaf:name "Ronnie Peterson" .
+
+<http://example.org/driver/Rubens_Barrichello> a foaf:Person ;
+    dbo:wins 11 ;
+    dcterms:temporal "1993-2011" ;
+    schema:countryOfOrigin "Brazil" ;
+    schema:endDate "2009 Italian Grand Prix" ;
+    schema:startDate "2000 German Grand Prix" ;
+    foaf:name "Rubens Barrichello" .
+
+<http://example.org/driver/Sam_Hanks> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1957" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1957 Indianapolis 500" ;
+    schema:startDate "1957 Indianapolis 500" ;
+    foaf:name "Sam Hanks" .
+
+<http://example.org/driver/Sebastian_Vettel> a foaf:Person ;
+    dbo:wins 53 ;
+    dcterms:temporal "2007-2022" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "2019 Singapore Grand Prix" ;
+    schema:startDate "2008 Italian Grand Prix" ;
+    foaf:name "Sebastian Vettel" .
+
+<http://example.org/driver/Sergio_Pérez*> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "2011-" ;
+    schema:countryOfOrigin "Mexico" ;
+    schema:endDate "2023 Azerbaijan Grand Prix" ;
+    schema:startDate "2020 Sakhir Grand Prix" ;
+    foaf:name "Sergio Pérez*" .
+
+<http://example.org/driver/Stirling_Moss> a foaf:Person ;
+    dbo:wins 16 ;
+    dcterms:temporal "1950-1962" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1961 German Grand Prix" ;
+    schema:startDate "1955 British Grand Prix" ;
+    foaf:name "Stirling Moss" .
+
+<http://example.org/driver/Thierry_Boutsen> a foaf:Person ;
+    dbo:wins 3 ;
+    dcterms:temporal "1983-1993" ;
+    schema:countryOfOrigin "Belgium" ;
+    schema:endDate "1990 Hungarian Grand Prix" ;
+    schema:startDate "1989 Canadian Grand Prix" ;
+    foaf:name "Thierry Boutsen" .
+
+<http://example.org/driver/Tony_Brooks> a foaf:Person ;
+    dbo:wins 6 ;
+    dcterms:temporal "1956-1961" ;
+    schema:countryOfOrigin "United Kingdom" ;
+    schema:endDate "1959 German Grand Prix" ;
+    schema:startDate "1957 British Grand Prix" ;
+    foaf:name "Tony Brooks" .
+
+<http://example.org/driver/Troy_Ruttman> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1950-1952, 1954, 1956-1958, 1960" ;
+    schema:countryOfOrigin "United States" ;
+    schema:endDate "1952 Indianapolis 500" ;
+    schema:startDate "1952 Indianapolis 500" ;
+    foaf:name "Troy Ruttman" .
+
+<http://example.org/driver/Valtteri_Bottas*> a foaf:Person ;
+    dbo:wins 10 ;
+    dcterms:temporal "2013-" ;
+    schema:countryOfOrigin "Finland" ;
+    schema:endDate "2021 Turkish Grand Prix" ;
+    schema:startDate "2017 Russian Grand Prix" ;
+    foaf:name "Valtteri Bottas*" .
+
+<http://example.org/driver/Vittorio_Brambilla> a foaf:Person ;
+    dbo:wins 1 ;
+    dcterms:temporal "1974-1980" ;
+    schema:countryOfOrigin "Italy" ;
+    schema:endDate "1975 Austrian Grand Prix" ;
+    schema:startDate "1975 Austrian Grand Prix" ;
+    foaf:name "Vittorio Brambilla" .
+
+<http://example.org/driver/Wolfgang_von_Trips> a foaf:Person ;
+    dbo:wins 2 ;
+    dcterms:temporal "1956-1961" ;
+    schema:countryOfOrigin "Germany" ;
+    schema:endDate "1961 British Grand Prix" ;
+    schema:startDate "1961 Dutch Grand Prix" ;
+    foaf:name "Wolfgang von Trips" .
+

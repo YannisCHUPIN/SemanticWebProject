@@ -1,0 +1,21 @@
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+<https://fuseki.nishyda.tech/ontology#PowerPlant>
+        rdf:type    owl:Class;
+        rdfs:label  "Power Plant" .
+
+<https://fuseki.nishyda.tech/ontology#capacity>
+        rdf:type    owl:DatatypeProperty;
+        rdfs:label  "capacity in MW" .
+
+<https://fuseki.nishyda.tech/ontology/data>
+        rdf:type      owl:Ontology;
+        rdfs:comment  "An ontology for power plants and their specifications.";
+        rdfs:label    "Power Plants Ontology" .
+
+<https://fuseki.nishyda.tech/ontology#energySource>
+        rdf:type    owl:DatatypeProperty;
+        rdfs:label  "energy source" .
