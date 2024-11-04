@@ -162,27 +162,23 @@ WHERE {
               ns1:latitude ?accidentLat;
               ns1:longitude ?accidentLong.
   }
-  
   # Dataset des centrales électriques
   SERVICE <http://localhost:3030/dataset_Power_Plant/sparql> {
     ?powerPlant a ns2:PowerPlant;
                 geo:lat ?plantLat;
                 geo:long ?plantLong.
   }
-  
   # Dataset des aéroports
   SERVICE <http://localhost:3030/dataset_aeroport/sparql> {
     ?airport ns3:inCity ?city;
              geo:lat ?airportLat;
              geo:lat ?airportLong.
   }
-  
   # Condition de proximité basée sur la distance géographique (simplifiée)
-  #FILTER(
-  #  (ABS(?accidentLat - ?plantLat) < 1 && ABS(?accidentLong - ?plantLong) < 1) ||
-  #  (ABS(?accidentLat - ?airportLat) < 1 && ABS(?accidentLong - ?airportLong) < 1)
-  #)
-
+  FILTER(
+    (ABS(?accidentLat - ?plantLat) < 1 && ABS(?accidentLong - ?plantLong) < 1) ||
+    (ABS(?accidentLat - ?airportLat) < 1 && ABS(?accidentLong - ?airportLong) < 1)
+  )
 }
 limit 10
 ```
