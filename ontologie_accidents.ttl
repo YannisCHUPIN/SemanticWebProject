@@ -1,0 +1,42 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://example.org/accident/> .
+@prefix schema: <https://schema.org/> .
+@prefix ns1: <https://www.geonames.org/ontology#> .
+
+# Déclaration de votre dataset
+<https://example.org/accidents-dataset> a void:Dataset ;
+    dcterms:title "Dataset des accidents de la circulation mortel" ;
+    dcterms:description "Données sur les accidents incluant des informations de localisation, de conditions météorologiques, et des caractéristiques des accidents" ;
+    dcterms:creator <https://example.org/group16> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    void:exampleResource ex:201900000024 ;
+    void:triples "171079"^^xsd:integer ;
+    void:uriSpace "https://example.org/accident/" ;
+    void:vocabulary <https://schema.org/> , <https://www.geonames.org/ontology#> ;
+    void:classPartition [
+        void:class schema:Place ;
+        void:classPartition [
+            void:class schema:addressLocality ;
+            void:entities "12980"^^xsd:integer ;
+        ];
+        void:classPartition [
+            void:class schema:weatherCondition ;
+            void:entities "12980"^^xsd:integer ; # Nombre d'entités de type weatherCondition
+        ]
+    ] ;
+    void:propertyPartition [
+        void:property schema:addressLocality ;
+        void:property schema:day ;
+        void:property schema:month ;
+        void:property schema:weatherCondition ;
+        void:property ns1:latitude ;
+        void:property ns1:longitude ;
+    ] ;
+    void:linkPredicate owl:sameAs ; # Spécifie que des liens externes utilisent owl:sameAs
+    void:target <https://www.geonames.org/>, <https://www.wikidata.org/> .
+
+# Lien externe vers Geonames et Wikidata
+<https://example.org/accidents-dataset> void:subset <https://sws.geonames.org/> ;
+    void:subset <https://www.wikidata.org/> .
